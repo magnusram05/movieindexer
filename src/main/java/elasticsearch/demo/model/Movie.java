@@ -1,7 +1,5 @@
 package elasticsearch.demo.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -80,7 +78,6 @@ public class Movie implements Cacheable<String> {
         return data;
     }
 
-    @JsonIgnore
     @Override
     public String getKey() {
         return this.tconst;
